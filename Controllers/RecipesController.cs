@@ -49,7 +49,7 @@ public class RecipesController : Controller
         Recipe? foundRecipe = _context.Recipes.FirstOrDefault(recipe => recipe.RecipeId == recipeId);
         if (foundRecipe != null)
         {
-            return View("Edit", foundRecipe);
+            return View("Details", foundRecipe);
         }
         return RedirectToAction("All");
     }
@@ -88,7 +88,7 @@ public class RecipesController : Controller
             return Edit(recipeId);
         }   
     }
-    [HttpPost("recipes/{recipesId}/delete")]
+    [HttpPost("recipes/{recipeId}/delete")]
     public IActionResult Delete(int recipeId)
     {
         Recipe? recipe = _context.Recipes.FirstOrDefault(recipe => recipe.RecipeId == recipeId);

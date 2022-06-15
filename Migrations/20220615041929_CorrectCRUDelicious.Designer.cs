@@ -3,6 +3,7 @@ using System;
 using CRUDelicious.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CRUDelicious.Migrations
 {
     [DbContext(typeof(ORMContext))]
-    partial class ORMContextModelSnapshot : ModelSnapshot
+    [Migration("20220615041929_CorrectCRUDelicious")]
+    partial class CorrectCRUDelicious
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

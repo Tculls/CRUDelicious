@@ -31,12 +31,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/CRUDelicious/Views/Recipes/New.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1xOZXcuY3NodG1s
+[C:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/CRUDelicious/Views/Recipes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/CRUDelicious/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/CRUDelicious/Views/Shared/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5ldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/CRUDelicious/Views/Shared/_ValidationScriptsPartial.cshtml]

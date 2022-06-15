@@ -1,0 +1,37 @@
+@model Recipe
+
+<h1>Edit @Model.DishName</h1>
+
+<form asp-controller="Recipes" asp-action="Update" method = "Post" asp-route-recipeId="@Model.RecipeId">
+    <div>
+        <label asp-for="ChefName"></label>
+        <span asp-validation-for="ChefName">
+        </span>
+        <input asp-for="ChefName">
+    </div>
+    <div>
+        <label asp-for="DishName"></label>
+        <span asp-validation-for="DishName">
+        </span>
+        <input asp-for="DishName">
+    </div>
+    <div>
+        <label asp-for="Calories"></label>
+        <span asp-validation-for="Calories">
+        </span>
+        <input asp-for="Calories">
+    </div>
+    <div>
+        <label asp-for="Tasty"></label>
+        <span asp-validation-for="Tasty">
+        </span>
+        <input asp-for="Tasty">
+    </div>
+    <div>
+        <label asp-for="Description"></label>
+        <span asp-validation-for="Description">
+        </span>
+        <input asp-for="Description">
+    </div>
+    <input type="submit" value="Edit dish">
+</form>

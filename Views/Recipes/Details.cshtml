@@ -9,12 +9,12 @@
 
 
 <a
+asp-controller="recipes"
 asp-action="Edit"
-asp-controller="Recipes"
-asp-route-data="@Model.RecipeId">Edit Dish</a>
+asp-route-recipeId="@Model.RecipeId">Edit Dish</a>
 
 <form
-asp-action="Delete"
-asp-controller="Recipes"
+asp-controller="recipes"
+asp-action="delete"
 asp-route-recipeId="@Model.RecipeId"
-method="POST">Remove Recipe</form>
+method="POST"><button>Remove Recipe</button></form>
