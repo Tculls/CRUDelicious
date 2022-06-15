@@ -1,0 +1,20 @@
+@model Recipe
+
+<h1>@Model.DishName</h1>
+<h2>Created By: @Model.ChefName</h2>
+<hr>
+<p>@Model.Description</p>
+<h4>Calories: @Model.Calories</h4>
+<h3>Tasty Rater: @Model.Tasty</h3>
+
+
+<a
+asp-action="Edit"
+asp-controller="Recipes"
+asp-route-data="@Model.RecipeId">Edit Dish</a>
+
+<form
+asp-action="Delete"
+asp-controller="Recipes"
+asp-route-recipeId="@Model.RecipeId"
+method="POST">Remove Recipe</form>

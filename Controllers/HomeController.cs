@@ -3,20 +3,29 @@ using Microsoft.AspNetCore.Mvc;
 using CRUDelicious.Models;
 
 namespace CRUDelicious.Controllers;
-
 public class HomeController : Controller
 {
-    private MyContext _context;
+    private readonly ILogger<HomeController> _logger;
 
-    public HomeController(MyContext context)
+    public HomeController(ILogger<HomeController> logger)
     {
-        _context = context;
+        _logger = logger;
     }
-    [HttpGet("")]
+
+    [HttpGet("/")]
     public IActionResult Index()
     {
-        List<Recipe> AllRecipes = _context.Recipes.ToList();
+        return RedirectToAction("All", "recipes");
+    }
 
+    public IActionResult Privacy()
+    {
         return View();
+    }
+
+    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+    public IActionResult Error()
+    {
+        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }
