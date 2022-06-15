@@ -89,7 +89,7 @@ public class RecipesController : Controller
         }   
     }
     [HttpPost("recipes/{recipesId}/delete")]
-    public IActionResult Delete(int postId)
+    public IActionResult Delete(int recipeId)
     {
         Recipe? recipe = _context.Recipes.FirstOrDefault(recipe => recipe.RecipeId == recipeId);
         if (recipe != null)
